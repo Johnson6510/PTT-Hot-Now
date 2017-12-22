@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O1e-zr-R7s">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PTT熱門文章-->
+        <scene sceneID="9vk-Br-Uvj">
+            <objects>
+                <tableViewController id="8uJ-i4-YlY" customClass="HotTextViewController" customModule="PTT_Hot_Now" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="URe-48-SfT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotTextCell" id="182-21-IkA" customClass="HotTextCell" customModule="PTT_Hot_Now" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="182-21-IkA" id="A3K-Ne-yQ4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7bU-Da-u6e">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhs-dt-hna">
+                                            <rect key="frame" x="105" y="37" width="265" height="62"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="62" id="zHT-Ie-4PX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnW-Gi-oYF">
+                                            <rect key="frame" x="105" y="0.0" width="259" height="38"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="4fy-5n-PSv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Qhs-dt-hna" firstAttribute="leading" secondItem="A3K-Ne-yQ4" secondAttribute="leading" constant="105" id="Dh4-Qb-3IY"/>
+                                        <constraint firstAttribute="trailing" secondItem="AnW-Gi-oYF" secondAttribute="trailing" constant="11" id="Kb9-eC-H8s"/>
+                                        <constraint firstAttribute="bottom" secondItem="Qhs-dt-hna" secondAttribute="bottom" constant="0.5" id="N1p-uv-zc5"/>
+                                        <constraint firstItem="Qhs-dt-hna" firstAttribute="top" secondItem="A3K-Ne-yQ4" secondAttribute="top" constant="38" id="NsG-Fd-rXT"/>
+                                        <constraint firstAttribute="trailing" secondItem="Qhs-dt-hna" secondAttribute="trailing" constant="5" id="OJe-sS-3Hz"/>
+                                        <constraint firstItem="AnW-Gi-oYF" firstAttribute="top" secondItem="A3K-Ne-yQ4" secondAttribute="top" id="Zy6-6y-Cdn"/>
+                                        <constraint firstItem="AnW-Gi-oYF" firstAttribute="leading" secondItem="A3K-Ne-yQ4" secondAttribute="leading" constant="105" id="fQv-gY-ONx"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <connections>
+                                    <outlet property="descLabel" destination="Qhs-dt-hna" id="pHF-LB-9j5"/>
+                                    <outlet property="thumbImageView" destination="7bU-Da-u6e" id="xPm-5U-ou2"/>
+                                    <outlet property="titleLabel" destination="AnW-Gi-oYF" id="kdN-1T-Mc3"/>
+                                    <segue destination="KmL-Hj-who" kind="show" identifier="TextRead" id="ryZ-nv-xte"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8uJ-i4-YlY" id="kjC-dv-91Q"/>
+                            <outlet property="delegate" destination="8uJ-i4-YlY" id="AZN-ao-lde"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="PTT熱門文章" id="xvG-Ye-tKU">
+                        <barButtonItem key="backBarButtonItem" title="返回列表" id="IZB-En-0s4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="skg-vh-gW7">
+                            <connections>
+                                <action selector="refresh:" destination="8uJ-i4-YlY" id="nbF-5B-pSO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Bq0-53-dKl">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="更新熱門文章">
+                                <attributes>
+                                    <font key="NSFont" size="11" name=".PingFangTC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MmS-yv-LvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="-159"/>
+        </scene>
+        <!--閱讀文章-->
+        <scene sceneID="mNo-Yp-2xU">
+            <objects>
+                <viewController title="閱讀文章" id="KmL-Hj-who" customClass="TextViewController" customModule="PTT_Hot_Now" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="os2-jn-fLT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5y-LS-B6K">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W5y-LS-B6K" firstAttribute="top" secondItem="i22-tP-zAu" secondAttribute="top" id="Afs-fh-ANO"/>
+                            <constraint firstItem="W5y-LS-B6K" firstAttribute="trailing" secondItem="i22-tP-zAu" secondAttribute="trailing" id="OBw-tw-mN8"/>
+                            <constraint firstItem="W5y-LS-B6K" firstAttribute="bottom" secondItem="i22-tP-zAu" secondAttribute="bottom" id="PQx-Tw-PMQ"/>
+                            <constraint firstItem="W5y-LS-B6K" firstAttribute="leading" secondItem="i22-tP-zAu" secondAttribute="leading" id="fQH-eD-hRv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i22-tP-zAu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="閱讀文章" id="xc2-Dh-iiT">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="refresh" id="1IO-4u-72H">
+                                <connections>
+                                    <action selector="refresh:" destination="KmL-Hj-who" id="jK8-Yu-M8h"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="上一頁" id="XOp-Hx-ulz">
+                                <connections>
+                                    <action selector="goBack:" destination="KmL-Hj-who" id="XoC-FN-nYT"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="goBackBtn" destination="XOp-Hx-ulz" id="oOJ-fe-SXX"/>
+                        <outlet property="webView" destination="W5y-LS-B6K" id="s9N-jB-CGK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7QO-gS-rin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="-160.56971514242881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G66-ps-6Ey">
+            <objects>
+                <navigationController id="O1e-zr-R7s" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="36w-4w-veN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8uJ-i4-YlY" kind="relationship" relationship="rootViewController" id="Lgq-Pf-V7r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaO-if-D2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787" y="-159"/>
+        </scene>
+    </scenes>
+</document>

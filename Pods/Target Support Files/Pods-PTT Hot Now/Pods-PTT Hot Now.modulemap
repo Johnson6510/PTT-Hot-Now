@@ -1,0 +1,6 @@
+framework module Pods_PTT_Hot_Now {
+  umbrella header "Pods-PTT Hot Now-umbrella.h"
+
+  export *
+  module * { export * }
+}
